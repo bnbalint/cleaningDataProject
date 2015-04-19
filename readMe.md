@@ -117,5 +117,14 @@ This code uses the following libraries
 #### Write the dataset to a file
 
 - This dataset is saved as **tidyDataset2.txt**
-- To read in this dataset, use *read.table("cleaningData_Project_Data/tidyDataset2.txt", header = TRUE)*
+- To read in this dataset, use 
+
+
+    address <- "https://s3.amazonaws.com/coursera-uploads/user-af6302f2ea29bdd42e137c1f/973500/asst-3/6aaafd00e6d911e4ae7a6f62e19d4065.txt"
+    
+    data <- read.table(url(address), header = TRUE)
+    
+    View(data)
+
+
 

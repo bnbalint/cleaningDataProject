@@ -10,7 +10,7 @@ output: html_document
 
 
 The original data used in this analysis come from a dataset of information gathered from the accelerometer and 
-gyroscope of a Sumsung Galaxy II smartphone worn by 30 different participants. The data obtained from the smartphone was expanded on to add data about the 3-axial (XYZ) linear acceleration and 3-axial angular velocity of the device. Subsequently, the data was summarize in a variety of ways (mean, standard deviation, maximum absolute deviation, etc. More information on the original data can be found here
+gyroscope of a Sumsung Galaxy II smartphone worn by 30 different participants. The data obtained from the smartphone was expanded on to add data about the 3-axial (XYZ) linear acceleration and 3-axial angular velocity of the device. Subsequently, the data was summarize in a variety of ways (mean, standard deviation, maximum absolute deviation, etc.) More information on the original data can be found here
 
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
@@ -32,9 +32,13 @@ This subset of data can be found in **tidyDataset1.txt**.
 
 ## Summarization
 
-The data was summarized by first grouping the data by activity type (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS). The mean of each variable (mean and standard deviation values retained above) was then calculated for each activity type. The units of these new variables (means) are the same as the units of the original variables. 
+The data was summarized by first grouping the data by activity type (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS). The mean of each variable (mean and standard deviation values retained above) was then calculated for each activity type. 
 
 The dataset containing this summary information can be found in **tidyDataset2.txt**.
+
+
+## Units
+The units of the new variables (means of variables) are the same as the units of the original variables. 
 
 
 ## Instructions

@@ -26,8 +26,8 @@ This code uses the following libraries
 
 #### Process variable name data
 
-- Read in the variable name data, found in the **features.txt** file (featureNames)
-- Create more descriptive variable names
+- Read in the variable name data, found in the **features.txt** file, saving as *featureNames*
+- Modify *featureNames* to create more descriptive variable names
     + Remove parentheses
     + Replace commas with underscores
     + Replace dashes with underscores
@@ -46,9 +46,9 @@ This code uses the following libraries
 #### Read in the test and training data
 
 * Appropriately label the data set with descriptive variable names on ingest
-    + **subject_train.txt** files receive column name "Subject"
-    + **y_train.txt** files receive column name "Activty"
-    + **x_train.txt** files receive column names featureNames, processed above
+    + **subject_train.txt** and **subject_test.txt** files receive column name "Subject"
+    + **y_train.txt** and **y_test.txt** files receive column name "Activty"
+    + **x_train.txt** and **x_test.txt** files receive column names *featureNames*, processed above
 
 
 
@@ -90,10 +90,10 @@ This code uses the following libraries
 
 
 
-#### Modidy the "Activity" column to use descriptive names instead of numbers
+#### Modify the "Activity" column to use descriptive names instead of numbers
 
-- Reduce activtyTable (read in earlier from activity_labels.txt to a simple factor variable (instead of table)
-    + *activityNames <- activityTable[, 2]* (the index retains the assigned number)
+- Reduce activtyTable (read in earlier from **activity_labels.txt** to a simple factor variable (instead of table)
+    + *activityNames <- activityTable[, 2]* (the index retains the activity number)
 
 - Use the factor to convert the activity number to the activity name
     + *activityNames[extractedData$Activity]*

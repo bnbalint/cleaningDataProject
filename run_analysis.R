@@ -176,8 +176,8 @@ write.table(extractedData, file = "cleaningData_Project_Data/tidyDataset1.txt")
 ##
 ###############################################################################
 
-## group the data by Activity name
-activities <- group_by(extractedData, Activity)
+## group the data by Activity and Subject
+activities <- group_by(extractedData, Activity, Subject)
 
 ## calculate the mean of each column
 ## within each group
